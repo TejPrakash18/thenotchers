@@ -8,6 +8,7 @@ public class Client {
 //
 //        mediaPlayer.play("song.mp3");
 //        mediaPlayer.stop();
+//
 //        AdvancedMediaPlayer amp =  new AdvancedMediaPlayer();
 //        MediaPlayer mp = new AdvancedMediaPlayerAdapter(amp);
 //
