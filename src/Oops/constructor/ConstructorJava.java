@@ -4,11 +4,13 @@ public class ConstructorJava {
     public static void main(String[] args) {
         Human objHuman = new Human("tej", 22);
         objHuman.print();
+        System.out.println(Human.id); // static keyword called by class name
 
     }
 }
 
 class Human{
+    static int id = 1001; // static keyword are constant veriable
     String name;
     int age;
 
