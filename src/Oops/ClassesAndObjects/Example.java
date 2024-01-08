@@ -1,6 +1,6 @@
-package Oops;
+package Oops.ClassesAndObjects;
 
-public class Example1 {
+public class Example {
     public static void main(String[] args) {
         System.out.println("Create an object using" + " `new` "+"keyWord");
         CreateObjet obj = new CreateObjet();
@@ -13,3 +13,4 @@ class CreateObjet{
     int age =  21;
     String name = "Tej";
 }
+
