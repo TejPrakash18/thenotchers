@@ -54,10 +54,12 @@ public class LRUCache<K, V> {
         System.out.println(cache.get("key1")); // Will print null (evicted)
 
         // Removing a key from the cache
-//        cache.remove("key4");
+        cache.remove("key4");
 
         // Clearing the cache
-//        cache.clear();
+        cache.clear();
+
+        System.out.println(cache.get("key3"));
     }
 }
 
