@@ -58,7 +58,11 @@ public class LinkedListDS {
 
         ll.addToTail(4);
         ll.addToTail(5);
+        ll.addToTail(6);
 
+        ll.display();
+        
+        ll.addToHead(7);
         ll.display();
     }
 }
