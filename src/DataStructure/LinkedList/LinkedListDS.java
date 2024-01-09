@@ -38,31 +38,65 @@ class LinkedList{
         }
     }
 
-        public void display(){
+    public void display(){
         Node current = head;
         while (current!= null){
             System.out.println(current.data+" ");
             current = current.next;
         }
-            System.out.println();
+        System.out.println();
+    }
+
+    public void deleteToHead(){
+        Node current = head;
+        if(current == null){
+            System.out.println("Linked list is empty");
         }
+        else {
+            head = current.next;
+        }
+    }
+
+    public void deleteToTail(){
+        if(head == null || head.next == null){
+            System.out.println("empty");
+            head = null;
+        }
+        else {
+            Node current = head;
+            while (current.next.next != null){
+                current = current.next;
+            }
+            current.next = null;
+        }
+
+    }
+
 }
 public class LinkedListDS {
     public static void main(String[] args) {
         LinkedList ll =  new LinkedList();
+
+        ll.deleteToHead();
+        ll.deleteToTail();
+
         ll.addToHead(3);
         ll.addToHead(2);
         ll.addToHead(1);
+        ll.deleteToHead();
 
         ll.display();
+
+        ll.deleteToTail();
 
         ll.addToTail(4);
         ll.addToTail(5);
         ll.addToTail(6);
 
         ll.display();
-        
+
         ll.addToHead(7);
+        ll.deleteToHead();
         ll.display();
     }
 }
