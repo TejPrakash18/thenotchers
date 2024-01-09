@@ -41,10 +41,10 @@ class LinkedList{
     public void display(){
         Node current = head;
         while (current!= null){
-            System.out.println(current.data+" ");
+            System.out.print(current.data+" -> ");
             current = current.next;
         }
-        System.out.println();
+        System.out.println("null");
     }
 
     public void deleteToHead(){
@@ -89,6 +89,8 @@ public class LinkedListDS {
 
         ll.deleteToTail();
 
+        ll.display();
+
         ll.addToTail(4);
         ll.addToTail(5);
         ll.addToTail(6);
@@ -96,7 +98,9 @@ public class LinkedListDS {
         ll.display();
 
         ll.addToHead(7);
+        ll.display();
         ll.deleteToHead();
+        ll.addToTail(8);
         ll.display();
     }
 }
