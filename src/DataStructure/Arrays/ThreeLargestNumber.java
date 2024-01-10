@@ -18,7 +18,7 @@ class Printlargest{
                 sec = first;
                 first = arr[i];
             } else if (arr[i] > sec) {
-                third = sec;
+                    third = sec;
                 sec = arr[i];
             }
             else if(arr[i] > third){
