@@ -8,15 +8,17 @@ public class SingleNumber {
 
         for (int i = 1; i < nums.length; i++) {
             ans = ans ^ nums[i];
+            System.out.println(ans);
         }
 
         return ans;
 
     }
     public static void main(String[] args) {
+        System.out.println("ans");
         System.out.println(singleNumber(new int[]{4,1,2,1,2}));
-        System.out.println(singleNumber(new int[]{2,2,1}));
-        System.out.println(singleNumber(new int[]{1}));
+//        System.out.println(singleNumber(new int[]{2,2,1}));
+//        System.out.println(singleNumber(new int[]{1}));
     }
 
 }
