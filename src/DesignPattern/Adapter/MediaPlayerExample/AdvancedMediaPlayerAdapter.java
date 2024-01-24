@@ -1,7 +1,7 @@
 package DesignPattern.Adapter.MediaPlayerExample;
 
 public class AdvancedMediaPlayerAdapter implements MediaPlayer{
-    private  AdvancedMediaPlayer amp;
+    private final AdvancedMediaPlayer amp;
 
     public AdvancedMediaPlayerAdapter(AdvancedMediaPlayer amp){
         this.amp = amp;
