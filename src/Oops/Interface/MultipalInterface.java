@@ -7,7 +7,7 @@ public class MultipalInterface implements InterfaceOne, InterfaceTwo {
 
     @Override
     public void getName() {
-        System.out.print("Neha ji ");
+        System.out.print("Tej ");
     }
 
     @Override
