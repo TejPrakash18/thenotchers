@@ -10,6 +10,7 @@ class ReadOnly{
 class WriteOnly{
     private String name = "Nehu";
 
+
     public void setName(String name){
         this.name = name;
         System.out.println(name);
