@@ -12,6 +12,14 @@ public class Ractangle {
             System.out.println();
         }
     }
+    public static void print1(int n){
+        for(int i=0; i<4; i++){
+            for(int j=0; j<4; j++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
     public static void main(String[] args) {
         int t;
         Scanner sc = new Scanner(System.in);
@@ -21,8 +29,10 @@ public class Ractangle {
         for(int i=0;i<t;i++ ){
             int n;
             n= sc.nextInt();
-            print(n);
+//            print(n);
         }
+
+//        print1(4);
 
     }
 }
