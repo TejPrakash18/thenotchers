@@ -61,3 +61,10 @@ In this repository, you will get each and every class's notes `except basics of 
 5. `Abstraction in java`
     - **📝What is abstraction?**
     - **📝Needs of abstraction?**
+
+6. `Interface in java`
+
+
+# System Design in Java
+
+1. `Design Principal`
