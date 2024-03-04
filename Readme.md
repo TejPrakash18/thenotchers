@@ -63,6 +63,7 @@ In this repository, you will get each and every class's notes `except basics of 
     - **📝Needs of abstraction?**
 
 6. `Interface in java`
+   - **What is interface**
 
 
 # System Design in Java
