@@ -64,12 +64,18 @@ class Quiz {
 
 public class QuizApplication {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter your name !");
+        String name = scanner.nextLine();
+        int correctAnswer =0;
+        int wrongAnswer = 0;
         Quiz quiz = new Quiz();
         quiz.addQuestion(new Question("What is the capital of France?", List.of("Paris", "London", "Berlin", "Rome"), 0));
         quiz.addQuestion(new Question("What is the largest mammal?", List.of("Elephant", "Whale", "Giraffe", "Lion"), 1));
         quiz.addQuestion(new Question("What is 2+2?", List.of("3", "4", "5", "6"), 1));
+        quiz.addQuestion(new Question("What is 2/2?", List.of("3", "4", "1", "6"), 2));
 
-        Scanner scanner = new Scanner(System.in);
+
 
         while (quiz.hasNextQuestion()) {
             Question question = quiz.getNextQuestion();
@@ -79,15 +85,18 @@ public class QuizApplication {
                 System.out.println((i + 1) + ". " + options.get(i));
             }
             System.out.print("Your answer: ");
-            int answerIndex = scanner.nextInt() - 1; // Adjust for 0-based indexing
+            int answerIndex = scanner.nextInt() - 1; // Adjust for 0-based indexing 1-1 = 0
             if (quiz.checkAnswer(answerIndex)) {
+                correctAnswer++;
                 System.out.println("Correct!");
             } else {
+                wrongAnswer++;
                 System.out.println("Incorrect. The correct answer is: " + options.get(question.getCorrectAnswerIndex()));
             }
             System.out.println();
         }
-
+        System.out.println("Hello "+ name +" your correct answer is "+correctAnswer+" and wrong answer is "+ wrongAnswer);
+        System.out.println("total score is "+correctAnswer+"/4");
         scanner.close();
     }
 }
