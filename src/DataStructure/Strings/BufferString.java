@@ -1,7 +1,5 @@
 package DataStructure.Strings;
 
-import BasicJava.HelloWorld;
-
 public class BufferString {
     public static void main(String[] args) {
         String name = new String("Hello, I am String");
