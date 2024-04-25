@@ -10,7 +10,7 @@ import java.net.UnknownHostException;
 
 public class Client {
     
-    public Runnable getRunnable() throws UnknownHostException, IOException {
+    public Runnable getRunnable() throws IOException {
         return new Runnable() {
             @Override
             public void run() {
