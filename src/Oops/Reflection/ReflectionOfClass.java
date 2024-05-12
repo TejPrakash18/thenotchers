@@ -19,6 +19,7 @@ class MyClass {
     }
 
     private void privateMethod() {
+        int a = 0;
         System.out.println("Private Method");
     }
 
@@ -30,14 +31,16 @@ class MyClass {
 
 
 
-public class ReflectionOfClass {
+public class ReflectionOfClass  {
     public static void main(String[] args) {
+//        MyClass obj = new MyClass();
+
         Class<?> clazz = MyClass.class;
 
         System.out.println("Class Name: " + clazz.getName());
         System.out.println("Modifiers: " + Modifier.toString(clazz.getModifiers()));
         System.out.println("Superclass: " + clazz.getSuperclass().getName());
-
+//
         System.out.println("Constructors:");
         Constructor<?>[] constructors = clazz.getDeclaredConstructors();
         for (Constructor<?> constructor : constructors) {
@@ -47,6 +50,7 @@ public class ReflectionOfClass {
             for (Class<?> parameterType : parameterTypes) {
                 System.out.println("Parameter Type: " + parameterType.getName());
             }
+
         }
 
         System.out.println("Fields:");
@@ -67,6 +71,13 @@ public class ReflectionOfClass {
             for (Class<?> parameterType : parameterTypes) {
                 System.out.println("Parameter Type: " + parameterType.getName());
             }
+            Field[] fields1 = clazz.getDeclaredFields();
+            for (Field field : fields1) {
+                System.out.println("Field Name: " + field.getName());
+                System.out.println("Field Type: " + field.getType().getName());
+                System.out.println("Modifiers: " + Modifier.toString(field.getModifiers()));
+            }
+
         }
 
     }
