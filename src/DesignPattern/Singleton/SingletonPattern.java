@@ -8,6 +8,7 @@ class Singleton {
 
     private Singleton() {
 
+        //don't break the singleton by using this methode
         if (instance != null) {
             throw new RuntimeException("you are trying to break singleton design pattern");
         }
@@ -17,7 +18,7 @@ class Singleton {
 
 
         //thread safe object creation;
-        synchronized (SingletonPattern.class) {
+        synchronized (Singleton.class) {
             if (instance == null) {
                 instance = new Singleton();
             }
