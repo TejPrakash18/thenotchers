@@ -1,7 +1,7 @@
 package DesignPattern.Singleton;
 
 import java.lang.reflect.Constructor;
-import java.lang.reflect.InvocationTargetException;
+
 
 class Singleton {
     private static Singleton instance;
@@ -16,6 +16,10 @@ class Singleton {
 
     public static Singleton getInstance() {
 
+//        if (instance == null) {
+//                instance = new Singleton();
+//            }
+//            return instance;
 
         //thread safe object creation;
         synchronized (Singleton.class) {
@@ -29,7 +33,7 @@ class Singleton {
 }
 
 public class SingletonPattern {
-    public static void main(String[] args) throws NoSuchMethodException {
+    public static void main(String[] args) throws RuntimeException , NoSuchMethodException{
         Singleton obj = Singleton.getInstance();
         System.out.println(obj.hashCode());
 
@@ -42,12 +46,9 @@ public class SingletonPattern {
         Singleton obj3 = null;
         try {
             obj3 = constructor.newInstance();
-        } catch (InstantiationException e) {
-            throw new RuntimeException(e);
-        } catch (IllegalAccessException e) {
-            throw new RuntimeException(e);
-        } catch (InvocationTargetException e) {
-            throw new RuntimeException(e);
+        } catch(Exception e) {
+            System.out.println(e);
+
         }
         System.out.println(obj3.hashCode());
 

@@ -69,3 +69,11 @@ In this repository, you will get each and every class's notes `except basics of 
 # System Design in Java
 
 1. `Design Principal`
+-------
+2. `Design pattern`
+   ### what is design pattern
+   ##### Design pattern are reusable components to use solve any problem
+
+   #### types of design pattern
+      `there is 3 type of design patterns`
+   
