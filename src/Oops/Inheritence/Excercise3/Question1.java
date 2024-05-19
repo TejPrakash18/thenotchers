@@ -11,6 +11,9 @@ class Derived extends Base{
     void display(){
         System.out.println("Derived class");
     }
+    void print(){
+        System.out.println("Derived class");
+    }
 }
 public class Question1 {
     public static void main(String[] args) {
@@ -24,6 +27,7 @@ public class Question1 {
         b.display();
         d.display();
         bd.display();
+        d.print();
 
     }
 }
