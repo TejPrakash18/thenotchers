@@ -33,6 +33,13 @@ class Singleton {
 }
 
 public class SingletonPattern {
+//    public static void main(String[] args) {
+////        Singleton obj = Singleton.getInstance();
+////        System.out.println(obj.hashCode());
+////
+////        Singleton obj2 = Singleton.getInstance();
+////        System.out.println(obj2.hashCode());
+//    }
     public static void main(String[] args) throws RuntimeException , NoSuchMethodException{
         Singleton obj = Singleton.getInstance();
         System.out.println(obj.hashCode());
