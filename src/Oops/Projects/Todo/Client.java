@@ -10,8 +10,9 @@ public class Client {
             System.out.println("1. Add Task");
             System.out.println("2. View Tasks");
             System.out.println("3. Delete Task");
-            System.out.println("4. Mark Task as Completed");
-            System.out.println("5. Exit");
+            System.out.println("4. Update Task");
+            System.out.println("5. Mark Task as Completed");
+            System.out.println("6. Exit");
             System.out.print("Choose an option: ");
             int choice = scanner.nextInt();
             scanner.nextLine(); // Consume newline
@@ -33,11 +34,16 @@ public class Client {
                     taskManager.deleteTask(idToDelete);
                     break;
                 case 4:
+                    System.out.println("Enter task ID and Update Task");
+                    int idToUpdate = scanner.nextInt();
+//                    taskManager.updateTask(idToUpdate);
+                    break;
+                case 5:
                     System.out.print("Enter task ID to mark as completed: ");
                     int idToComplete = scanner.nextInt();
                     taskManager.markTaskAsCompleted(idToComplete);
                     break;
-                case 5:
+                case 6:
                     System.out.println("Exiting...");
                     scanner.close();
                     System.exit(0);
