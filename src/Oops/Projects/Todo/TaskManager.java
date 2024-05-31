@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+import static sun.security.pkcs11.wrapper.Functions.getId;
+
 public class TaskManager {
     private List<Task> tasks;
     private int idCounter;
@@ -28,6 +30,7 @@ public class TaskManager {
             }
         }
     }
+
 
     public void deleteTask(int id) {
         Task taskToRemove = null;
