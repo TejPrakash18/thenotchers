@@ -14,8 +14,8 @@ public class AbbreviatedName {
 
         String abbreviatedName = "";
         if (!middleName.isEmpty()) {
-            abbreviatedName += Character.toUpperCase(firstName.charAt(0)) + ". ";
-            abbreviatedName += Character.toUpperCase(middleName.charAt(0)) + ". ";
+            abbreviatedName += Character.toUpperCase(firstName.charAt(0)) + ".";
+            abbreviatedName += Character.toUpperCase(middleName.charAt(0)) + " ";
         }
         abbreviatedName += lastName;
 
