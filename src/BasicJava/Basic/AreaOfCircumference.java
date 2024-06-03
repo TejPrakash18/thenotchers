@@ -2,7 +2,7 @@ package BasicJava.Basic;
 
 import java.util.Scanner;
 
-public class AreaAndCurcumferenceOfACircle {
+public class AreaOfCircumference {
     public static void main(String[] args) {
         double PI = 3.14;
         Scanner scan  = new Scanner(System.in);
