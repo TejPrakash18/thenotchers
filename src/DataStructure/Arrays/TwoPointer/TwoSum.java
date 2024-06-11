@@ -4,7 +4,6 @@ public class TwoSum {
     public static void twoSum(int[] numbers,int target){
         int p1 = 0;
         int p2 = numbers.length-1;
-        System.out.println(p2);
 
         while (p1 < p2){
             if(numbers[p1] + numbers[p2] == target){
