@@ -23,14 +23,14 @@ public class SingleLL {
         node4.next = node5;
 
         LLNode current = node1;
-
+        int length = 0;
         while (current != null){
-            System.out.println(current.data);
+            length++;
+            System.out.print(current.data + " ");
             current = current.next;
         }
-
-
-
+        System.out.println();
+        System.out.println("length of LL "+length);
 
     }
 }
