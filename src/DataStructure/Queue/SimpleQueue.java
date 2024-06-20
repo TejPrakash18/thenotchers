@@ -28,6 +28,10 @@ class Queue{
             return false;
         }
     }
+    public int peek(){
+        int peek = queue[front];
+        return peek;
+    }
     public void enQueue(int data){
         if(rear == size-1)
             System.out.println("Queue is full");
@@ -57,12 +61,15 @@ public class SimpleQueue {
         queue.enQueue(13);
         queue.enQueue(14);
         queue.enQueue(15);
+
+        int peekElement = queue.peek();
+        System.out.println("peek element "+peekElement);
         boolean empty = queue.isEmpty();
-        System.out.println(empty);
+        System.out.println("empty or not :) " +empty);
         queue.enQueue(16);
         queue.enQueue(17);
         boolean full = queue.isFull();
-        System.out.println(full);
+        System.out.println("full or not :) "+full);
 
         int element = queue.deQueue();
         System.out.println("Deleted element "+element);
