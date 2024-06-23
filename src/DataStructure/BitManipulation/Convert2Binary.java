@@ -12,12 +12,12 @@ public class Convert2Binary {
                 res.append('0');
             }
             number= number/2;
-            res.reverse();
         }
+        res.reverse();
         return res.toString();
     }
     public static void main(String[] args) {
-        int number = 7;
+        int number = 13;
         String result = binary(number);
         System.out.println(result);
     }
