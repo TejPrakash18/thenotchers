@@ -1,6 +1,17 @@
 package DataStructure.BitManipulation;
 
 public class BasicOperation {
+//     static int setBit(int num, int i) {
+//        return num | (1 << i);
+//    }
+//    static int clearBit(int num, int i) {
+//        int mask = ~(1 << i);
+//        return num & mask;
+//    }
+//    static boolean getBit(int num, int i) {
+//        return (num & (1 << i)) != 0;
+//    }
+
     public static void main(String[] args) {
         int x = 12;
         int y = 10;
