@@ -27,6 +27,10 @@ public class ConcreteBuilder implements Builder {
         car.setSeats(8);
     }
 
+    public void color(){
+        System.out.println("Grey");
+    }
+
     @Override
     public Car getCar() {
         return car;
