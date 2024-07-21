@@ -6,5 +6,5 @@ public interface Builder {
     void buildGear();
     void buildSeats();
 
-    Car getCar();
+//    Car getCar();
 }

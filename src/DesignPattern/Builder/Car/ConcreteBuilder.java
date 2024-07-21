@@ -31,7 +31,6 @@ public class ConcreteBuilder implements Builder {
         System.out.println("Grey");
     }
 
-    @Override
     public Car getCar() {
         return car;
     }

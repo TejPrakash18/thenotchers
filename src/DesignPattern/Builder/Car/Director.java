@@ -13,7 +13,7 @@ public class Director {
         builder.buildGear();
         builder.buildSeats();
     }
-    public Car getCar(){
-        return builder.getCar();
-    }
+//    public Car getCar(){
+//        return getCar();
+//    }
 }
