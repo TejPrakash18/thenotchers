@@ -1,10 +1,4 @@
----
-path: "/java-setup"
-title: "Java Development Setup"
-order: "2B"
-section: "Basics"
-description: "Intro to java"
----
+
 
 ## Tools You Will Need
 
