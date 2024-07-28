@@ -44,36 +44,45 @@ public class KadanesAlgorithm {
 
 ```java
 //maxSubArrayProduct
-public class KadanesAlgorithm {
-    public static int[] maxSubArraySum(int[] nums) {
-        int maxEndingHere = nums[0];
-        int maxSoFar = nums[0];
-        int start = 0, end = 0, s = 0;
+public class MaximumProductSubarray {
+    public static int maxProduct(int[] nums) {
+        if (nums.length == 0) return 0;
+
+        // Initialize the variables
+        int maxProduct = nums[0];
+        int minProduct = nums[0];
+        int result = nums[0];
 
         for (int i = 1; i < nums.length; i++) {
-            if (nums[i] > maxEndingHere + nums[i]) {
-                maxEndingHere = nums[i];
-                s = i;
-            } else {
-                maxEndingHere += nums[i];
+            if (nums[i] < 0) {
+                // Swap maxProduct and minProduct if the current number is negative
+                int temp = maxProduct;
+                maxProduct = minProduct;
+                minProduct = temp;
             }
 
-            if (maxSoFar < maxEndingHere) {
-                maxSoFar = maxEndingHere;
-                start = s;
-                end = i;
-            }
+            // Calculate the maximum and minimum product ending at the current position
+            maxProduct = Math.max(nums[i], maxProduct * nums[i]);
+            minProduct = Math.min(nums[i], minProduct * nums[i]);
+
+            // Update the result
+            result = Math.max(result, maxProduct);
         }
 
-        return new int[]{maxSoFar, start, end};
+        return result;
     }
 
     public static void main(String[] args) {
-        int[] nums = {-2, 1, -3, 4, -1, 2, 1, -5, 4};
-        int[] result = maxSubArraySum(nums);
-        System.out.println("Maximum Sum: " + result[0]); // Output: 6
-        System.out.println("Subarray: [" + result[1] + ", " + result[2] + "]"); // Output: [3, 6]
+        int[] nums1 = {2, 3, -2, 4};
+        System.out.println("Maximum Product Subarray: " + maxProduct(nums1)); // Output: 6
+
+        int[] nums2 = {-2, 0, -1};
+        System.out.println("Maximum Product Subarray: " + maxProduct(nums2)); // Output: 0
+
+        int[] nums3 = {-2, 3, -4};
+        System.out.println("Maximum Product Subarray: " + maxProduct(nums3)); // Output: 24
     }
 }
+
 
 ```
