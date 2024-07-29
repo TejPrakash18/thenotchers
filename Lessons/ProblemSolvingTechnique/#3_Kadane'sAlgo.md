@@ -10,14 +10,14 @@ Kadane's Algorithm is a dynamic programming technique used to find the maximum s
 ### Approach 
 1. `Initialization:`
 Initialize two variables, maxEndingHere and maxSoFar.
-maxEndingHere keeps track of the maximum sum of the subarray ending at the current position.
+maxEndingHere keeps track of the maximum sum of the subArray ending at the current position.
 maxSoFar stores the maximum sum found so far.
 2. `Iteration:`
 Traverse through the array.
 At each position, update maxEndingHere to be the maximum of the current element alone or the current element plus the maximum sum ending at the previous position.
 Update maxSoFar to be the maximum of itself or maxEndingHere.
 3. `Result:`
-maxSoFar will contain the maximum sum of the contiguous subarray at the end of the iteration.. 
+maxSoFar will contain the maximum sum of the contiguous subArray at the end of the iteration. 
 
 ```java
 // maxSubArraySum
