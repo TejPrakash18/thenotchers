@@ -10,7 +10,7 @@ public class FindCharacter {
         return character1(str, i + 1, key, size);
     }
     public static int character(String str, int i, char key, int size){
-        if(i>=size) return 0;
+        if(i>=size) return -1;
 
         if(str.charAt(i)==key) {
             return i;
@@ -20,7 +20,7 @@ public class FindCharacter {
     public static void main(String[] args) {
         String str = "neha";
         int i=0;
-        char key = 'h';
+        char key = 't';
         int size = str.length();
 
         int ans = character(str,i,key,size);
