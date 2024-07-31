@@ -18,6 +18,8 @@ public class FindCharacter {
         return character(str, i+1, key, size);
     }
     public static void main(String[] args) {
+//        System.out.println(0647);
+//        System.out.println(8421);
         String str = "neha";
         int i=0;
         char key = 't';
