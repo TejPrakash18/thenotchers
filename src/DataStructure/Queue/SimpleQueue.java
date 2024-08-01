@@ -45,7 +45,7 @@ class Queue{
     }
     public int deQueue() {
         int data = queue[front];
-        if (front >= rear) {
+        if (front == rear) {
             front = 0;
             rear = 0;
         } else
