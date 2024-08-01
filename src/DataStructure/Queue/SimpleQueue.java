@@ -2,13 +2,15 @@ package DataStructure.Queue;
 
 
 class Queue{
-    int size =5;
-    int[] queue = new int[size];
+    int size;
+    int[] queue;
     int front, rear;
 
-    Queue(){
-        front = -1;
-        rear = -1;
+    Queue(int size){
+        this.size = size;
+        queue=new int[size];
+        front = 0;
+        rear = 0;
     }
 
     public boolean isFull(){
@@ -21,7 +23,7 @@ class Queue{
     }
 
     public boolean isEmpty(){
-        if(front == -1){
+        if(front == rear){
             return true;
         }
         else {
@@ -36,7 +38,7 @@ class Queue{
         if(rear == size-1)
             System.out.println("Queue is full");
         else{
-            if(front == -1){
+            if(front == rear){
                 front =0;
             }
                 rear++;
@@ -47,8 +49,8 @@ class Queue{
     public int deQueue() {
         int data = queue[front];
         if (front >= rear) {
-            front = -1;
-            rear = -1;
+            front = 0;
+            rear = 0;
         } else
             front++;
         return (data);
@@ -56,7 +58,7 @@ class Queue{
 }
 public class SimpleQueue {
     public static void main(String[] args) {
-        Queue queue = new Queue();
+        Queue queue = new Queue(5);
         queue.enQueue(12);
         queue.enQueue(13);
         queue.enQueue(14);
