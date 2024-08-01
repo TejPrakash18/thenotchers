@@ -38,9 +38,6 @@ class Queue{
         if(rear == size-1)
             System.out.println("Queue is full");
         else{
-            if(front == rear){
-                front =0;
-            }
                 rear++;
                 queue[rear] = data;
                 System.out.println("insert data "+ data);
