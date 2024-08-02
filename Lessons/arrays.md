@@ -1,5 +1,5 @@
 ---
-path: "/arrays"
+
 title: "Introduction to Arrays"
 order: "4A"
 section: "Arrays"
@@ -33,7 +33,7 @@ eg, we want to store roll numbers:
 ```java
 int[] rollnos = new int[5];
 
-         OR
+         (OR)
 
 int[] rollnos = {51, 82, 13, 15, 16};
 ```
