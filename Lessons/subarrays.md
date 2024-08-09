@@ -6,10 +6,10 @@ section: "Arrays"
 description: "arrays"
 ---
 
-> A subarray is a contiguous part of any given array. Basically speaking, an array that is present inside another array or a part of that array, but in a continuous manner.
-For eg., consider the array [1, 2, 3, 4], There are 10 non-empty sub-arrays in this. 
-The subarrays are [1], [2], [3], [4], [1,2], [2,3], [3,4], [1,2,3], [2,3,4] and [1,2,3,4]. 
-In general, for an array/string of size n, there are n*(n+1)/2 non-empty subarrays/substrings.
+> A subArray is a contiguous part of any given array. Basically speaking, an array that is present inside another array or a part of that array, but in a continuous manner.
+For e.g., consider the array [1, 2, 3, 4], There are 10 non-empty sub-arrays in this. 
+The subArrays are [1], [2], [3], [4], [1,2], [2,3], [3,4], [1,2,3], [2,3,4] and [1,2,3,4]. 
+In general, for an array/string of size n, there are n*(n+1)/2 non-empty subArrays/substrings.
 
 
 ![java-subarray](./images/java-subarray.png)
