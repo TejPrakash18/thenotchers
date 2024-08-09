@@ -3,6 +3,7 @@ package Leetcode.Arrays;
 public class ThreeConsecutiveOdds {
     static boolean findOdds(int[] arr){
         int cnt= 0;
+
         /* corner case */
         if(arr.length <3) return false;
 
