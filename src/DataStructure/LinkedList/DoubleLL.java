@@ -11,6 +11,22 @@ class DLL{
         this.prev = null;
     }
 
+    public static DLL[] insertAtHead(DLL head, DLL tail, int data){
+        if(head == null){
+            DLL newNode = new DLL(data);
+            head = newNode;
+            tail = newNode;
+        }
+        else{
+            DLL newNode = new DLL(data);
+            newNode.next = head;
+            head.prev = newNode;
+            head = newNode;
+        }
+        return new DLL[]{head,tail};
+
+    }
+
     public static void printDLL (DLL head) {
         DLL temp = head;
         while (temp!=null){
@@ -37,7 +53,10 @@ public class DoubleLL {
         DLL third = new DLL(30);
         DLL fourth = new DLL(40);
 
+
         DLL head = first;
+
+        DLL tail = fourth;
 
         first.next = second;
         second.prev = first;
@@ -49,6 +68,14 @@ public class DoubleLL {
         fourth.prev = third;
 
         DLL.printDLL(head);
+
+        DLL[] result = DLL.insertAtHead(head, tail,101);
+        head =  result[0];
+        tail = result[1];
+
+        DLL.printDLL(head);
+
+
         int ans = DLL.getLength(head);
         System.out.println("lenght of DLL " +ans);
     }
