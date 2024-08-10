@@ -29,6 +29,7 @@ public class MiddleOfLL {
         MLL n5 = new MLL(5);
         MLL n6 = new MLL(6);
 
+
         MLL head = n1;
         n1.next = n2;
         n2.next= n3;
