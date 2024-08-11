@@ -8,15 +8,15 @@ class DNode{
         this.data= data;
         this.next = null;
     }
-    public static DNode deleteDuplicate(DNode val){
-        DNode curr = val;
+    public static DNode deleteDuplicate(DNode head){
+        DNode curr = head;
          while (curr != null) {
            while (curr.next != null && curr.data == curr.next.data)
              curr.next = curr.next.next;
            curr = curr.next;
          }
 
-         return val;
+         return head;
 
     }
 
