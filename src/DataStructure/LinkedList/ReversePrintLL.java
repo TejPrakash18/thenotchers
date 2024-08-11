@@ -39,6 +39,7 @@ public class ReversePrintLL {
         nLL.next = new NodeLL(20);
         nLL.next.next = new NodeLL(30);
         nLL.next.next.next = new NodeLL(40);
+
         NodeLL head = nLL;
 
         NodeLL.printLL(head);
