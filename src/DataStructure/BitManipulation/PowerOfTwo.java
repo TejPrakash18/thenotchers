@@ -11,7 +11,7 @@ public class PowerOfTwo {
         }
     }
     public static void main(String[] args) {
-        int n = 15;
+        int n = 16;
         boolean ans = powerOf2(n);
         System.out.println(ans);
     }
