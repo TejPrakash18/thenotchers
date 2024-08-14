@@ -3,7 +3,7 @@ package DataStructure.Arrays;
 public class UpdateElementAnArray {
     static int[] update(int[] arr, int pos, int key){
         for (int i=0; i<arr.length; i++){
-            if (i == pos){
+            if (i ==  pos){
                 arr[i] = key;
             }
         }
