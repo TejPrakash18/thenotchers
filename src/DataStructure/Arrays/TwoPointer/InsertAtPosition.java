@@ -25,10 +25,16 @@ public class InsertAtPosition {
         int arr[] = { 12, 34, 10, 6, 40 };
         int pos = 3;
         int key = 11;
+
+        int pos1= 2;
+        int key1 = 17;
         print(arr);
         int[] answer = insertAtPosition(arr, pos, key);
-        System.out.println("insert ann element; ");
+        System.out.println("\ninsert ann element; ");
         print(answer);
+        int[] answer1 = insertAtPosition(answer,pos1, key1);
+        System.out.println(" \n--------- ");
+        print(answer1);
 
     }
 }
