@@ -2,7 +2,7 @@ package BasicJava.ArraysProblem;
 
 public class SecondLargest {
     public static void main(String[] args) {
-        int[] arr = {5,9,11,18,33};
+        int[] arr = {5,9,11,18,33,37};
 
         int ans = secondLargest(arr);
         System.out.print("Second largest number is "+ ans);
