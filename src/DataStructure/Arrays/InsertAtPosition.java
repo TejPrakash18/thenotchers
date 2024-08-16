@@ -1,4 +1,4 @@
-package DataStructure.Arrays.TwoPointer;
+package DataStructure.Arrays;
 
 public class InsertAtPosition {
     public static int[] insertAtPosition(int[] arr , int pos, int key){
