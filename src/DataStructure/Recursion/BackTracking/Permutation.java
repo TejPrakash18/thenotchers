@@ -17,7 +17,7 @@ public class Permutation {
 
             swap(str, j, i);
             printPermutation(str,i+1);
-            swap(str,i,j); //backtracking
+            swap(str,j,i); //backtracking
 
         }
 
