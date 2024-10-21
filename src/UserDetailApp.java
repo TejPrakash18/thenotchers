@@ -50,7 +50,7 @@ public class UserDetailApp extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 String name = nameField.getText();
                 String age = ageField.getText();
-
+    
                 if (!name.isEmpty() && !age.isEmpty()) {
                     // Store user details in the ArrayList
                     userDetails.add("Name: " + name + ", Age: " + age);
