@@ -20,5 +20,8 @@ public class Exmaple {
         System.out.println(0647);
         int x=5;
         System.out.println(++x*2);
+
+
+        System.out.println("Help out");
         }
 }
