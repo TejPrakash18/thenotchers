@@ -1,7 +1,7 @@
 package BasicJava;
 
 public class Exmaple {
-    private int var;
+    private final int var;
     public Exmaple(int var){
         this.var= var;
     }
@@ -12,10 +12,11 @@ public class Exmaple {
         name[0] = "Tej";
         name[1] = "Manish";
         System.out.println(name[2]);
-        int arr[] = {120,200,016};
-        for (int i = 0; i < arr.length; i++) {
-            System.out.println(arr[i]+ " ");
+        int[] arr= {120,200,016};
+        for (int j : arr) {
+            System.out.println(j + " ");
         }
+
         System.out.println(0647);
         int x=5;
         System.out.println(++x*2);
