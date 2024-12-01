@@ -6,6 +6,8 @@ public class Example {
         CreateObjet obj = new CreateObjet();
         System.out.println(obj.name);
         System.out.println(obj.age);
+
+
     }
 }
 
