@@ -72,9 +72,6 @@ class Maker{
     public InvoicePrint(Invoice invoice){
         this.invoice = invoice;
     }
-    public void printInvoice(){
-        // print the invoice
-    }
  }
 
 
