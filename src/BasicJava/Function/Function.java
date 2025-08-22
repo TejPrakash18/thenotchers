@@ -17,5 +17,6 @@ public class Function {
         display(3,4);
         Function obj = new Function();
         obj.show();
+
     }
 }
