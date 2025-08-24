@@ -18,7 +18,7 @@ public class ExecutorDemo {
 
         for (int i = 1; i <= 5; i++) {
             executor.submit(task);
-            executor.submit(task2);
+//            executor.submit(task2);
         }
 
         executor.shutdown();
