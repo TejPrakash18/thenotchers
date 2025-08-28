@@ -18,7 +18,6 @@ public class ArraysExamples {
         System.out.println(Arrays.binarySearch(numbers, 5));
 
 
-
         Integer[] numbersObj = {5, 2, 9, 1, 7};
         Arrays.sort(numbersObj, (a, b) -> b.compareTo(a));
         System.out.println(Arrays.toString(numbersObj));
