@@ -13,13 +13,31 @@ class SolutionTwoSum {
     }
 }
 public class TwoSum {
+
+    public static int[] twoSumBrute(int[] arr, int tar){
+        for (int i=0; i<arr.length; i++){
+            int first = arr[i];
+            for (int j = 0; j < arr.length; j++) {
+                int pairSum  = first + arr[j];
+                if (pairSum == tar){
+                    return new int[]{i,j};
+                }
+
+            }
+        }
+        return null;
+
+    }
     public static void main(String[] args) {
         SolutionTwoSum obj = new SolutionTwoSum();
-        int arr[] = {2,7,11,15};
+        int arr[] = {5,2,11,7,15};
         int target = 9;
         int[] res =  obj.twoSum(arr,target);
+        int[] result =  twoSumBrute(arr,target);
         for(int i=0; i<res.length; i++){
-            System.out.println(res[i]);
+            System.out.print(result[i]+" ");
+
+
         }
     }
 }
