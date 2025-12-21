@@ -5,7 +5,7 @@ class TrieNode {
     boolean isEndOfWord = false;
 }
 
-class Trie {
+class  Trie {
     private TrieNode root;
 
     public Trie() {
